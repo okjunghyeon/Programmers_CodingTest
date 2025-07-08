@@ -31,3 +31,4 @@ bin/
 ### custom ###
 .idea
 codingTest.iml
+src/lv1/example
