@@ -1,4 +1,4 @@
-package 약수의_개수와_덧셈;
+package lv1.약수의_개수와_덧셈;
 
 class Solution {
     public int solution(int left, int right) {
