@@ -29,7 +29,8 @@ class Solution {
         }
 
         // 실패율 내림차순으로 정렬하여 스테이지 번호 배열로 반환
-        return map.entrySet().stream()
+        return map.entrySet()
+                .stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .mapToInt(Map.Entry::getKey)
                 .toArray();

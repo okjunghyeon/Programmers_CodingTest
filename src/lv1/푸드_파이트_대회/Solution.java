@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
  * food	        result
  * [1, 3, 4, 6]	"1223330333221"
  * [1, 7, 1, 2]	"111303111"
- * */
+ */
 class Solution {
     public String solution(int[] food) {
         // 1,2,3 ... index의 값을 /2 하여 정수값으로 변환한다.

@@ -5,10 +5,10 @@ class Solution {
 
         StringBuilder sb = new StringBuilder();
 
-        for (char c : s.toCharArray()) {
+        for(char c : s.toCharArray()) {
 
-            if (Character.isAlphabetic(c)) {
-                if (Character.isLowerCase(c)) {
+            if(Character.isAlphabetic(c)) {
+                if(Character.isLowerCase(c)) {
                     sb.append((c + n) % 'a');
                 } else {
                     sb.append((c + n) % 'A');

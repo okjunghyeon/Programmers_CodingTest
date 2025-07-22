@@ -7,7 +7,7 @@ class Solution {
         int a = Math.max(n, m);
         int b = Math.min(n, m);
 
-        while (b > 0) {
+        while(b > 0) {
             int temp = a % b;
             a = b;
             b = temp;

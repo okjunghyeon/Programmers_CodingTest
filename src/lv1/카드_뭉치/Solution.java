@@ -10,10 +10,10 @@ class Solution {
         Queue<String> q1 = new ArrayDeque<>(List.of(cards1));
         Queue<String> q2 = new ArrayDeque<>(List.of(cards2));
 
-        for (String word : goal) {
-            if (!q1.isEmpty() && q1.peek().equals(word)) {
+        for(String word : goal) {
+            if(!q1.isEmpty() && q1.peek().equals(word)) {
                 q1.poll();
-            } else if (!q2.isEmpty() && q2.peek().equals(word)) {
+            } else if(!q2.isEmpty() && q2.peek().equals(word)) {
                 q2.poll();
             } else {
                 return "No";

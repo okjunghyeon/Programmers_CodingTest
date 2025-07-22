@@ -8,15 +8,14 @@ class Solution {
 
         int answer = 0; // 접는 횟수
 
-        while (true) {
+        while(true) {
             // 현재 크기로 지갑에 들어가면 종료
-            if (width >= Math.max(bill[0], bill[1]) &&
-                    height >= Math.min(bill[0], bill[1])) {
+            if(width >= Math.max(bill[0], bill[1]) && height >= Math.min(bill[0], bill[1])) {
                 break;
             }
 
             // 더 긴 변을 반으로 접는다
-            if (bill[0] >= bill[1]) {
+            if(bill[0] >= bill[1]) {
                 bill[0] /= 2;
             } else {
                 bill[1] /= 2;

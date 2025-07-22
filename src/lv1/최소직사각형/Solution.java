@@ -4,22 +4,17 @@ class Solution {
     public int solution(int[][] sizes) {
         // sizes 를 순회하며 가로 세로 중 큰값과 작은값으로 구분한다.
         // 큰값은 max와 작은값은 min과 비교하여 더 클 경우 교체한다.
-        /**
-         6 5    (6 5)
-         7 3    (7 5)
-         6 3    (7 5)
-         8 4    (8 5)
-         * */
-
         int max, min;
         max = min = 0;
 
-        for (int[] size : sizes) {
+        for(int[] size : sizes) {
             int a = Math.max(size[0], size[1]);
             int b = Math.min(size[0], size[1]);
 
-            if(a > max) max = a;
-            if(b > min) min = b;
+            if(a > max)
+                max = a;
+            if(b > min)
+                min = b;
         }
 
         return max * min;

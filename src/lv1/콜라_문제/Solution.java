@@ -9,7 +9,7 @@ class Solution {
 
         int total = 0;
 
-        while (n >= a) {
+        while(n >= a) {
             int count = n / a;
             n %= a;
             int newCoke = count * b;

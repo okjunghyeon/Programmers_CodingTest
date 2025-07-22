@@ -12,11 +12,11 @@ class Solution {
         StringBuilder sb = new StringBuilder();
 
         // 각 행마다 처리
-        for (int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++) {
             // 각 열마다 OR 연산 수행
-            for (int j = 0; j < n; j++) {
+            for(int j = 0; j < n; j++) {
                 // 둘 중 하나라도 1이면 벽('#'), 둘 다 0이면 공백(' ')
-                if (secret1[i].charAt(j) == '1' || secret2[i].charAt(j) == '1') {
+                if(secret1[i].charAt(j) == '1' || secret2[i].charAt(j) == '1') {
                     sb.append("#");
                 } else {
                     sb.append(" ");
@@ -30,10 +30,8 @@ class Solution {
 
     String[] toSecret(int[] arr, int n) {
         String s = "%" + n + "s";
-        return Arrays.stream(arr)
-                .mapToObj(str -> String.format(s, Integer.toString(str, 2)))  // 10진수 → 2진수 문자열
-                .map(str -> str.replaceAll(" ", "0"))
-                .toArray(String[]::new);
+        return Arrays.stream(arr).mapToObj(str -> String.format(s, Integer.toString(str, 2)))  // 10진수 → 2진수 문자열
+                .map(str -> str.replaceAll(" ", "0")).toArray(String[]::new);
     }
 }
 //class Solution {

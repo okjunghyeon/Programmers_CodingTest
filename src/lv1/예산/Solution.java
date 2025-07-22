@@ -9,7 +9,8 @@ class Solution {
 
         for(int sum = 0, count = 0; count < d.length; count++) {
             sum += d[count];
-            if(sum > budget) return count;
+            if(sum > budget)
+                return count;
         }
 
         return d.length;
