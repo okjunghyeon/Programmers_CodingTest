@@ -2,6 +2,7 @@ package lv1.키패드_누르기;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 class Solution2 {
     public String solution(int[] numbers, String hand) {
@@ -62,4 +63,5 @@ class Solution2 {
         int y = map.get(number);
         return Math.abs(x / 10 - y / 10) + Math.abs(x % 10 - y % 10);
     }
+    
 }
